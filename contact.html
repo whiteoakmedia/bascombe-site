@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact | Bascombe Landscaping</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav light">
+    <a href="index.html" class="nav-logo"><img src="images/BascombeLogo300x.png" alt="Bascombe Landscaping"></a>
+    <div class="nav-links">
+      <div class="nav-dropdown">
+        <span class="nav-link">Services</span>
+        <div class="dropdown-panel">
+          <a href="lawn-care.html">Lawn Care</a>
+          <a href="hardscape.html">Hardscape</a>
+          <a href="construction.html">Construction</a>
+        </div>
+      </div>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="blog.html" class="nav-link">Blog</a>
+      <a href="about-us.html" class="nav-link">About</a>
+      <div class="nav-divider"></div>
+      <a href="contact.html" class="nav-cta">Get a Quote</a>
+    </div>
+    <button class="menu-bar" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <div class="mobile-sub">
+      <a href="lawn-care.html">Lawn Care</a>
+      <a href="hardscape.html">Hardscape</a>
+      <a href="construction.html">Construction</a>
+    </div>
+    <a href="projects.html">Projects</a>
+    <a href="blog.html">Blog</a>
+    <a href="about-us.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Contact Split -->
+  <div class="contact-split">
+    <div class="contact-left">
+      <div class="section-tag" style="color:var(--accent-light)">Contact Us</div>
+      <h1>Let's build something beautiful together.</h1>
+      <p>Fill out this form to get started on utilizing our services. You'll receive a no hassle, obligation free quote from us within 48 hours.</p>
+    </div>
+    <div class="contact-right">
+      <div class="contact-form">
+        <form id="contact-form" action="https://formspree.io/f/placeholder" method="POST">
+          <div class="form-row">
+            <div class="form-group"><label for="first-name">First Name</label><input type="text" id="first-name" name="first-name" placeholder="Your first name" required></div>
+            <div class="form-group"><label for="last-name">Last Name</label><input type="text" id="last-name" name="last-name" placeholder="Your last name"></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="you@email.com" required></div>
+            <div class="form-group"><label for="phone">Phone</label><input type="tel" id="phone" name="phone" placeholder="(555) 000-0000"></div>
+          </div>
+          <div class="form-group"><label for="service">Service Interest</label><select id="service" name="service"><option value="">What are you interested in?</option><option value="Lawn Care">Lawn Care</option><option value="Construction">Construction</option><option value="Hardscape">Hardscape</option></select></div>
+          <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell us about your project..." required></textarea></div>
+          <button type="submit" class="form-submit">Send Message</button>
+        </form>
+        <div class="form-success"><h3>Thank you!</h3><p>We'll be in touch within 48 hours.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
